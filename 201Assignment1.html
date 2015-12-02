@@ -1,0 +1,49 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+<h1>The javascript here is prompting the user to input. It then saves the variable, which is concatenated with a message in an alert.</h1>
+<h2>About me</h2>
+<p>
+  Hello, I am Catherine, from Singapore. Came to Codefellows to learn coding so that I can build awesome stuff!
+</p>
+<script>
+      var input = prompt('What is your name?');
+      alert('Nice to meet you '+ input);
+
+  var count=0;
+      var input1 = prompt ('Is Catherine from Singapore?(Y/N)');
+      input1 = input1.toLowerCase();
+      if (input1 == "y") {
+        count = count +1;
+        alert('Yes, Catherine is from Singapore!')
+      } else {
+        alert ('Oops...Catherine is from Singapore!');
+      }
+
+      var input2 = prompt ('Is Catherine Chinese?(Y/N)');
+      input2 = input2.toLowerCase();
+      if(input2 == "y") {
+        count = count +1;
+        alert('Yes, Catherine is Chinese!')
+      } else {
+        alert ('Oops...Catherine is Chinese!');
+      }
+
+      var input3 = prompt ('Is Catherine female?(Y/N')
+      input3 = input3.toLowerCase();
+      if(input3 == "y"){
+        count = count +1;
+        alert('Yes, Catherine is female!')
+      } else {
+        alert ('Oops...Catherine is female!');
+      }
+
+      alert("You've got "+ count + " question(s) correct!");
+
+</script>
+    </body>
+  </html>
